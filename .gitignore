@@ -1,0 +1,3 @@
+#Virtual Envirnoment
+venv/
+db.sqlite3
