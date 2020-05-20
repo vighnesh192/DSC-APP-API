@@ -1,12 +1,12 @@
-from apis.models import Apis
+from users.models import Users
 from rest_framework import viewsets, permissions
-from .serializers import ApisSerializer
+from .serializers import UsersSerializer
 
 # ViewSets are similar to views
 # which gets rendered with respect to a specific API call(GET, POST, etc.) 
-class ApisViewSets(viewsets.ModelViewSet):
-    queryset = Apis.objects.all()
+class UsersViewSets(viewsets.ModelViewSet):
+    queryset = Users.objects.all()
     permission_classes = [
         permissions.AllowAny
     ]
-    serializer_class = ApisSerializer
+    serializer_class = UsersSerializer
