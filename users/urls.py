@@ -1,5 +1,5 @@
 from rest_framework import routers
-from .api import UsersViewSets
+from users.api import UsersViewSets
 
 router = routers.DefaultRouter()
 router.register('users', UsersViewSets, 'users')
